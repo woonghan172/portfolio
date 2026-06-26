@@ -283,7 +283,7 @@ h1 {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.5px solid #1A1030;
+    border: none;
     display: block;
 }
 
@@ -367,6 +367,51 @@ h2 {
     color: var(--purple-mid);
 }
 
+/* ── RESUME ── */
+#resume {
+    border-top: 1px solid var(--border);
+}
+
+.resume-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 1.6rem;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    background: var(--purple-dark);
+    color: var(--white);
+    border: 1.5px solid var(--purple-dark);
+}
+
+.resume-btn:hover {
+    background: var(--purple-mid);
+    border-color: var(--purple-mid);
+}
+
+.resume-btn-outline {
+    background: transparent;
+    color: var(--purple-dark);
+}
+
+.resume-btn-outline:hover {
+    background: var(--purple-faint);
+    color: var(--purple-dark);
+    border-color: var(--purple-mid);
+}
+
 /* ── CONTACT ── */
 #contact {
     border-top: 1px solid var(--border);
@@ -412,15 +457,6 @@ h2 {
 
 .socials a:hover {
     color: var(--purple-dark);
-}
-
-/* ── FOOTER ── */
-footer {
-    text-align: center;
-    padding: 2rem;
-    border-top: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 0.8rem;
 }
 
 /* ── RESPONSIVE ── */
